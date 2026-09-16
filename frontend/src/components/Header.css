@@ -1,0 +1,110 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--ink);
+  border-bottom: 3px solid var(--amber);
+}
+
+.site-header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--paper);
+}
+
+.site-header__brand img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+.site-header__brand span {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-header__nav {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.site-header__link {
+  color: var(--concrete);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.site-header__link:hover {
+  color: var(--amber);
+}
+
+.site-header__link.is-active {
+  color: var(--amber);
+  border-bottom-color: var(--amber);
+}
+
+.site-header__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.site-header__toggle span {
+  display: block;
+  height: 2px;
+  background: var(--paper);
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .site-header__toggle {
+    display: flex;
+  }
+
+  .site-header__nav {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background: var(--ink);
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+  }
+
+  .site-header__nav.is-open {
+    max-height: 320px;
+  }
+
+  .site-header__link {
+    padding: 1rem var(--space-3);
+    border-bottom: 1px solid var(--steel-line-dark);
+    border-left: 3px solid transparent;
+  }
+
+  .site-header__link.is-active {
+    border-left-color: var(--amber);
+    border-bottom-color: var(--steel-line-dark);
+  }
+}

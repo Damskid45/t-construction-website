@@ -1,0 +1,36 @@
+.about-hero {
+  background: var(--concrete-deep);
+}
+
+.about-hero h1 {
+  font-size: var(--text-3xl);
+  max-width: 16ch;
+}
+
+.about-hero p {
+  margin-top: var(--space-3);
+  font-size: var(--text-lg);
+  color: var(--steel);
+  max-width: 56ch;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.about-grid h2 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-2);
+}
+
+.about-grid p {
+  color: var(--steel);
+}
+
+@media (max-width: 720px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

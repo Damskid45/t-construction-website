@@ -1,0 +1,42 @@
+:root {
+  /* Color */
+  --ink: #1a1a1a;          /* charcoal steel - primary dark */
+  --ink-soft: #2e2c29;      /* lifted charcoal for panels */
+  --concrete: #ede9e1;      /* warm concrete background */
+  --concrete-deep: #ddd7ca; /* darker concrete for section breaks */
+  --paper: #f7f5f0;         /* near-white for cards/content wells */
+  --amber: #e8940f;         /* logo amber - primary accent, used sparingly */
+  --amber-deep: #b5730a;    /* amber pressed/hover state */
+  --rust: #a8471e;          /* secondary accent - warm depth, CTAs */
+  --steel: #6b6b66;         /* mid grey - secondary text */
+  --steel-line: #c9c3b6;    /* hairline rule color on light bg */
+  --steel-line-dark: #45443f; /* hairline rule color on dark bg */
+
+  /* Type */
+  --font-display: 'Archivo Expanded', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
+
+  /* Type scale (major third-ish, hand tuned) */
+  --text-xs: 0.8rem;
+  --text-sm: 0.925rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.5rem;
+  --text-3xl: 3.5rem;
+  --text-4xl: 4.75rem;
+
+  /* Spacing */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6rem;
+  --space-7: 9rem;
+
+  /* Layout */
+  --content-width: 1180px;
+  --line: 1px solid var(--steel-line);
+  --line-dark: 1px solid var(--steel-line-dark);
+}

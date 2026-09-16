@@ -1,0 +1,87 @@
+.request-page__head h1 {
+  font-size: var(--text-2xl);
+}
+
+.request-page__head p {
+  color: var(--steel);
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 760px;
+}
+
+.request-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.request-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.request-form__full {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 400;
+  padding: 0.75rem 0.9rem;
+  border: 1.5px solid var(--steel-line);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.request-form textarea {
+  resize: vertical;
+}
+
+.request-form button {
+  align-self: flex-start;
+  margin-top: var(--space-1);
+}
+
+.request-form__error {
+  color: var(--rust);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .request-form__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.request-success {
+  max-width: 600px;
+  padding: var(--space-4) 0;
+}
+
+.request-success h1 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-2);
+}
+
+.request-success p {
+  color: var(--steel);
+  margin-bottom: var(--space-3);
+}
